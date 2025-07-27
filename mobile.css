@@ -1,0 +1,55 @@
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header .head {
+        height: 70px;
+        padding: 0 10px;
+    }
+
+    header .head img {
+        height: 60px;
+        width: 60px;
+    }
+
+    header .head h1 {
+        font-size: 24px;
+    }
+
+    .menu-header {
+        font-size: 28px;
+        padding: 8px 10px;
+    }
+
+    /* زیرمنو به حالت ستونی */
+    .menu-header.active + .submenu {
+        display: flex;
+        align-items: center;  /* کارت‌ها وسط صفحه قرار بگیرند */
+        gap: 15px;
+        padding: 5px;
+    }
+
+    /* هر کارت تمام عرض */
+    .submenu li.card {
+        width: 100%;
+        max-width: 350px;  /* برای اینکه کارت خیلی بزرگ نشود */
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .submenu li.card img {
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .card .desc {
+        font-size: 12px;
+        padding: 8px 6px;
+    }
+    
+}
