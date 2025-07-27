@@ -14,6 +14,7 @@ header .head {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
 }
 
 /* استایل پایه */
