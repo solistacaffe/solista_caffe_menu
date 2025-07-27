@@ -149,11 +149,12 @@ footer {
   border-top: 1px solid #555;
 }
 footer a img {
-    width: 20px;
-    position: absolute;
-    right: 270px;
+    width: 50px;
 }
-
+ footer .footer-simple {
+    display: flex;
+    justify-content: space-around;
+ }
 footer a {
   color: #f7a600; /* رنگ نارنجی ملایم برای لینک اینستا */
   text-decoration: none;
