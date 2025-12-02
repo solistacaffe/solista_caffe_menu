@@ -1,14 +1,18 @@
-// همه‌ی عنوان‌های منو را انتخاب کن
-const headers = document.querySelectorAll('.menu-header');
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".menu-btn");
+    const categories = document.querySelectorAll(".menu-category");
 
-headers.forEach(header => {
-  header.addEventListener('click', () => {
-    // بستن همه‌ی زیرمنوها به جز مورد کلیک‌شده
-    headers.forEach(h => {
-      if (h !== header) h.classList.remove('active');
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            const target = this.getAttribute("data-target");
+
+            // تغییر دکمه فعال
+            buttons.forEach(btn => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            // نمایش دسته‌بندی مربوطه
+            categories.forEach(cat => cat.classList.remove("active"));
+            document.getElementById(target).classList.add("active");
+        });
     });
-
-    // باز یا بسته کردن زیرمنوی خودش
-    header.classList.toggle('active');
-  });
 });

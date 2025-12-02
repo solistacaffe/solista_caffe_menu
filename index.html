@@ -1,220 +1,99 @@
 <!DOCTYPE html>
-<html lang="fa">
-
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>منوی کافه</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mobile.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سولیستا کافه | منو</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <div class="head">
-            <img src="img/logo.jpg" alt="لوگو" />
-            <h1>کافه سولیستا</h1>
-            <img src="img/logo.jpg" alt="لوگو" />
-        </div>
+    <header class="header">
+        <h1 class="title">منوی کافه</h1>
+        <img src="IMAGE/LOGO.png" alt="Solista Cafe" class="logo">
     </header>
 
-    <div class="main-content">
-        <div class="menu">
-            <div class="menu-header">قهوه</div>
-            <ul class="submenu">
-                <li class="card">
-                    <img src="https://coffeelounge.delonghi.com/wp-content/uploads/2023/09/glass_coffee.jpg" alt="اسپرسو" />
-                    اسپرسو <span class="price">50000 تومان</span>
-                    <div class="desc">میکس قهوه خالص و قوی.</div>
-                </li>
-            </ul>
+    <section class="hero">
+        <img src="IMAGE/BACK GROUND.jpg" alt="Coffee Background" class="bg-image">
+        <div class="overlay"></div>
+
+        <div class="container">
+            <div class="buttons">
+                <button class="menu-btn active" data-target="coffee">قهوه</button>
+                <button class="menu-btn" data-target="hot">نوشیدنی گرم</button>
+                <button class="menu-btn" data-target="cold">نوشیدنی سرد</button>
+                <button class="menu-btn" data-target="shake">شیک</button>
+                <button class="menu-btn" data-target="smoothie">اسموتی</button>
+            </div>
+
+            <div class="menu-wrapper">
+                <div id="coffee" class="menu-category active">
+                    <h2>قهوه</h2>
+                    <p class="subtitle">عطر اصیل قهوه تازه</p>
+                    
+                    <ul>
+                        <li><span>اسپرسو</span><span>۶۰,۰۰۰ تومان</span></li>
+                        <li><span>قهوه ترک</span><span>۷۵,۰۰۰ تومان</span></li>
+                        <li><span>قهوه فرانسه</span><span>۷۵,۰۰۰ تومان</span></li>
+                        <li><span>آمریکانو</span><span>۶۵,۰۰۰ تومان</span></li>
+                        <li><span>آمریکانو عسلی</span><span>۹۰,۰۰۰ تومان</span></li>
+                    </ul>
+                </div>
+
+                <div id="hot" class="menu-category">
+                    <h2>نوشیدنی گرم</h2>
+                    <p class="subtitle">گرما‌بخش لحظات شما</p>
+                    <ul>
+                        <li><span>کاپوچینو</span><span>۱۰۰,۰۰۰ تومان</span></li>
+                        <li><span>کاپونسکافه</span><span>۱۲۰,۰۰۰ تومان</span></li>
+                        <li><span>کارامل ماکیاتو</span><span>۱۱۰,۰۰۰ تومان</span></li>
+                        <li><span>موکا</span><span>۱۱۰,۰۰۰ تومان</span></li>
+                        <li><span>موکا عسلی</span><span>۱۵۰,۰۰۰ تومان</span></li>
+                        <li><span>هات چاکلت</span><span>۱۰۰,۰۰۰ تومان</span></li>
+                        <li><span>شیرنسکافه</span><span>۱۰۰,۰۰۰ تومان</span></li>
+                        <li><span>نوتلاچینو</span><span>۱۵۰,۰۰۰ تومان</span></li>
+                        <li><span>چای ماسالا</span><span>۱۰۰,۰۰۰ تومان</span></li>
+                    </ul>
+                </div>
+
+                <div id="cold" class="menu-category">
+                    <h2>نوشیدنی سرد</h2>
+                    <p class="subtitle">خنکی دلچسب و هیجان انگیز</p>
+                    <ul>
+                        <li><span>آیس کافی</span><span>۱۱۰,۰۰۰ تومان</span></li>
+                        <li><span>آیس آمریکانو</span><span>۷۰,۰۰۰ تومان</span></li>
+                        <li><span>آیس آمریکانو عسلی</span><span>۱۰۰,۰۰۰ تومان</span></li>
+                        <li><span>آیس کارامل ماکیاتو</span><span>۱۱۰,۰۰۰ تومان</span></li>
+                        <li><span>آیس موکا</span><span>۱۱۰,۰۰۰ تومان</span></li>
+                        <li><span>آیس لاته</span><span>۱۱۰,۰۰۰ تومان</span></li>
+                    </ul>
+                </div>
+
+                <div id="shake" class="menu-category">
+                    <h2>شیک</h2>
+                    <p class="coming-soon"><i class="fas fa-clock"></i> به زودی</p>
+                    </div>
+
+                <div id="smoothie" class="menu-category">
+                    <h2>اسموتی</h2>
+                    <p class="coming-soon"><i class="fas fa-clock"></i> به زودی</p>
+                </div>
+            </div>
         </div>
-        <div class="menu">
-            <div class="menu-header">نوشیدنی گرم</div>
-            <ul class="submenu">
-                <li class="card">
-                    <img src="https://lh6.googleusercontent.com/proxy/pa684lBFErVrS_7B44FAlkQ5Ljgdh2yZwVzdyodgrcHrXjm-jg2GHrKKefXMlEyGkT8foxbLgTamobzSvpFNvUWAC__lbFOr2qhtkqGf93oLWiQepXndBeM" alt="کاپوچینو" />
-                    کاپوچینو <span class="price">80000 تومان</span>
-                    <div class="desc">پودر کاپوچینو + شیر فوم گرفته شده</div>
-                </li>
-                <li class="card">
-                    <img src="https://sprudge.com/wp-content/uploads/2016/04/Sprudge-ObjetoEncontrado-JulianaGanan-Sprudge-ObjetoEncontrado-JulianaGanan-BSB_Coffee_Shops_Guide_objeto_latte_art_Lucas_Hamu_01.jpg" alt="لاته" />
-                    لاته <span class="price">80000 تومان</span>
-                    <div class="desc">دبل اسپرسو + شیر فوم گرفته شده</div>
-                </li>
-                <li class="card">
-                    <img src="https://www.allrecipes.com/thmb/LNHrJSFjgFl_sgGfinBRIBpNDxM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/7254611SpanishStyleHotChocolate4x3-1cd44c92ab5b497b879463044596798e.jpg" alt="هات چاکلت" />
-                    هات چاکلت <span class="price">80000 تومان</span>
-                    <div class="desc">شکلات + شیر فوم گرفته شده</div>
-                </li>
-                <li class="card">
-                    <img src="https://namhah.com/wp-content/uploads/2019/01/masala.jpg" alt="چای ماسالا" />
-                    چای ماسالا <span class="price">80000 تومان</span>
-                    <div class="desc">پودر ماسالا + شیر فوم گرفته شده</div>
-                </li>
-                <li class="card">
-                    <img src="https://www.eatthis.com/wp-content/uploads/sites/4/media/images/ext/621263600/chocolate-milk-straw.jpg?quality=82&strip=all" alt="شیر کاکائو" />
-                    شیر کاکائو <span class="price">80000 تومان</span>
-                    <div class="desc">پودر کاکائو + شیر فوم گرفته شده</div>
-                </li>
-                <li class="card">
-                    <img src="https://file.bohir.ir/img/blog/114/img.webp" alt="موکا" />
-                    موکا <span class="price">80000 تومان</span>
-                    <div class="desc">دبل اسپرسو + شکلات +شیر فوم گرفته شده</div>
-                </li>
-                <li class="card">
-                    <img src="https://www.sunrup.com/wp-content/uploads/2022/02/1-2.jpgg" alt="کارامل ماکیاتو" />
-                    کارامل ماکیاتو <span class="price">80000 تومان</span>
-                    <div class="desc">دبل اسپرسو + سس کارامل + شیر فوم گرفته شده</div>
-                </li>
-                <li class="card">
-                    <img src="https://drcoffee.ir/wp-content/uploads/2022/02/Americano-coffee-4.jpg" alt="آمریکانو" />
-                    آمریکانو <span class="price">55000 تومان</span>
-                    <div class="desc">دبل اسپرسو + آب جوش</div>
-                </li>
-            </ul>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="tel:" class="contact">  <i class="fas fa-phone"> 0933 265 3218 </i>  شماره تماس</a>
+            
+            <a href="https://www.instagram.com/cafe.solista/" target="_blank" class="contact"><i class="fab fa-instagram"></i> اینستاگرام</a>
         </div>
-        <div class="menu">
-            <div class="menu-header">نوشیدنی سرد</div>
-            <ul class="submenu">
-                <li class="card">
-                    <img src="https://foodisafourletterword.com/wp-content/uploads/2021/10/Easy_Organic_Vietnamese_Coffee_Recipe.jpg" alt="آیس کافی" />
-                    آیس کافی <span class="price">85000 تومان</span>
-                    <div class="desc">میکس اسپرسو + یخ</div>
-                </li>
-                <li class="card">
-                    <img src="https://130529051.cdn6.editmysite.com/uploads/1/3/0/5/130529051/5BK3PAF4YPP5SRE5JPKFRHWC.jpeg" alt="آیس لاته" />
-                    آیس لاته <span class="price">85000 تومان</span>
-                    <div class="desc">یخ + شیر + اسپرسو</div>
-                </li>
-                <li class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRaj9E_5_J4QIvBt7GjlDd44XnIvvPiwrswQ&s" alt="آیس موکا" />
-                    آیس موکا <span class="price">85000 تومان</span>
-                    <div class="desc">یخ + شیر + اسپرسو + شکلات</div>
-                </li>
-                <li class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbJdCiYkyJneKEqZ3GBr1Lfx7NTSLr16F6jA&s" alt="آیس کارامل ماکیاتو" />
-                    آیس کارامل ماکیاتو <span class="price">85000 تومان</span>
-                    <div class="desc">یخ + شیر + اسپرسو + سس کارامل</div>
-                </li>
-                <li class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhNoAlZ7DhDnM-iVgeFiq6t_-O-B06E4v86A&s" alt="آفوگاتو" />
-                    آفوگاتو <span class="price">85000 تومان</span>
-                    <div class="desc">بستنی وانیلی + اسپرسو</div>
-                </li>
-                <li class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTOmC1kpRSs53MEl6rnIM-Jvz24E7YhGQ7hQ&s" alt="آیس آمریکانو" />
-                    آیس آمریکانو <span class="price">55000 تومان</span>
-                    <div class="desc">یخ + آب + اسپرسو</div>
-                </li>
-            </ul>
-        </div>
-        <div class="menu">
-            <div class="menu-header">شیک</div>
-            <ul class="submenu">
-                <li class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYyKcgzPwZVPiPVIZn1fb-jW7sE3F0i_BI_Q&s" alt="شیک قهوه" />
-                    شیک قهوه <span class="price">100000 تومان</span>
-                    <div class="desc">بستنی + شیر + قهوه</div>
-                </li>
-                <li class="card">
-                    <img src="https://www.organicvalley.coop/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F5dqbssss%2Fproduction-v3%2F3ba3f137c02a6f320c156bb7c39e362bdbd87bb8-1356x1576.jpg&w=3840&q=75" alt="شیک شکلات" />
-                    شیک شکلات <span class="price">100000 تومان</span>
-                    <div class="desc">بستنی + شیر + شکلات</div>
-                </li>
-                <li class="card">
-                    <img src="https://www.glutenfreetranquility.com/wp-content/uploads/2023/08/banana-Milkshake-featured-image-1.jpg" alt="شیک موز" />
-                    شیک موز <span class="price">100000 تومان</span>
-                    <div class="desc">بستنی + شیر + موز</div>
-                </li>
-                <li class="card">
-                    <img src="https://skinnyspatula.com/wp-content/uploads/2020/08/Melon-Milkshake4-791x1024.jpg" alt="شیک طالبی" />
-                    شیک طالبی <span class="price">100000 تومان</span>
-                    <div class="desc">بستنی + شیر + طالبی</div>
-                </li>
-                <li class="card">
-                    <img src="https://marleysmenu.com/wp-content/uploads/2021/07/Nutella-Milkshake-Recipe-Card-Image.jpg" alt="شیک نوتلا" />
-                    شیک نوتلا <span class="price">100000 تومان</span>
-                    <div class="desc">بستنی + شیر + نوتلا</div>
-                </li>
-                <li class="card">
-                    <img src="https://biteswithbri.com/wp-content/uploads/2021/09/StrawberryOreoMilkshake-blog-7.jpg" alt="شیک اورئو" />
-                    شیک اورئو <span class="price">100000 تومان</span>
-                    <div class="desc">بستنی + شیر + اورئو</div>
-                </li>
-                <li class="card">
-                    <img src="https://blog.novasafra.com.br/wp-content/uploads/2018/02/milkshake-cappuccino.jpg" alt="شیک کاپوچینو" />
-                    شیک کاپوچینو <span class="price">100000 تومان</span>
-                    <div class="desc">بستنی + شیر + کاپوچینو</div>
-                </li>
-                <li class="card">
-                    <img src="https://fenjoonet.com/wp-content/uploads/2019/05/watermelon-milkshake.jpg" alt="شیک هندوانه" />
-                    شیک هندوانه <span class="price">100000 تومان</span>
-                    <div class="desc">بستنی + شیر + هندوانه</div>
-                </li>
-                <li class="card">
-                    <img src="https://ramakdairy.com/wp-content/uploads/2024/12/Triple-Caramel-Chocolate-Milkshake-Glasses.webp" alt="شیک دارک" />
-                    شیک دارک <span class="price">100000 تومان</span>
-                    <div class="desc">بستنی + شیر + شکلات تلخ</div>
-                </li>
-            </ul>
-        </div>
-        <div class="menu">
-            <div class="menu-header">آبمیوه های طبیعی </div>
-            <ul class="submenu">
-                <li class="card">
-                    <img src="https://pinchofyum.com/wp-content/uploads/melon-ginger-5.jpg" alt="آب طالبی " />
-                    آب طالبی<span class="price">0</span>
-                    <div class="desc">طالبی تازه</div>
-                </li>
-                <li class="card">
-                    <img src="https://www.manusmenu.com/wp-content/uploads/2015/11/1-Banana-Milk-3-1-of-1.jpg" alt="شیر موز" />
-                    شیر موز<span class="price">0</span>
-                    <div class="desc">شیر سرد + موز تازه</div>
-                </li>
-                <li class="card">
-                    <img src="https://images.ctfassets.net/6ilvqec50fal/4PRXCwLEif8hXTTG4pSL9T/add1849cf81a4f44868eaa8d1bb6edeb/watermelon-juice-benefits-01.jpg" alt="آب هندوانه" />
-                    آب هندوانه<span class="price">0</span>
-                    <div class="desc">هندوانه تازه</div>
-                </li>
-                <li class="card">
-                    <img src="https://www.realsimple.com/thmb/Kldsl-2wgCKXH6eQzsOX-chnin8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/health-benefits-of-mango-juice-GettyImages-1147373774-f7ebf4e4c13f4f67a2420df3c4325a04.jpg" alt="آب انبه" />
-                   آب انبه <span class="price">0</span>
-                    <div class="desc">انبه تازه</div>
-                </li>
-                <li class="card">
-                    <img src="https://post.healthline.com/wp-content/uploads/2020/10/carrot-juice-1296x728-header.jpg" alt="آب هویچ" />
-                    آب هویچ<span class="price">0</span>
-                    <div class="desc">هویچ تازه</div>
-                </li>
-                <li class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFQdHX2B1SewNvODUw1virT7ISiznSKLNbIA&s" alt="آب سیب" />
-                    آب سیب <span class="price">0</span>
-                    <div class="desc">سیب تازه</div>
-                </li>
-                <li class="card">
-                    <img src="https://www.floridacitrus.org/wp-content/uploads/2025/02/BG-OJ-1024x503.webp" alt="آب پرتقال" />
-                    اب پرتقال<span class="price">0</span>
-                    <div class="desc">پرتقال تازه</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-    <footer>
-  <div class="footer-simple">
-          <p>تلفن تماس:09332653218</p>
-    <a href="https://instagram.com/cafe.solista" target="_blank" rel="noopener noreferrer"><img src="img/011.png" alt=""></a>
-  </div>
-</footer>
+    </footer>
 
     <script src="script.js"></script>
-
-    <script>
-        (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "qzio1OjN1K98NUKUUYDBJ"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
-    </script>
-
 </body>
-
 </html>
